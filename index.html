@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PKRI | Patrick Kaku Research & Intelligence</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#081526;color:#fff}
+header{background:#102642;padding:20px;text-align:center;border-bottom:2px solid #d4af37}
+.logo{font-size:28px;font-weight:bold;color:#d4af37}
+header p{margin:8px 0;color:#cbd5e1}
+nav{display:flex;flex-wrap:wrap;justify-content:center;background:#142b47}
+nav a{color:white;text-decoration:none;padding:14px;font-size:14px}
+.hero{padding:45px 22px;text-align:center;background:linear-gradient(140deg,#102642,#07111e)}
+.hero h1{font-size:34px;color:#d4af37}
+.hero p{line-height:1.7;color:#dbe4ef}
+.btn{display:inline-block;padding:13px 20px;background:#d4af37;color:#081526;font-weight:bold;text-decoration:none;border-radius:6px;margin:8px}
+section{padding:28px 18px}
+h2{color:#d4af37}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:#142b47;padding:18px;border-radius:12px;border:1px solid #263e5c}
+.card h3{color:#d4af37}
+.card p{line-height:1.6;color:#dbe4ef}
+.box{background:#142b47;padding:20px;border-radius:12px}
+input,textarea,select{width:100%;padding:13px;margin:8px 0;border-radius:6px;border:1px solid #aaa;font-size:16px}
+button{padding:13px 18px;background:#d4af37;color:#081526;border:0;border-radius:6px;font-weight:bold}
+footer{text-align:center;padding:25px;background:#102642;color:#ccc}
+@media(max-width:500px){.cards{grid-template-columns:1fr}.hero h1{font-size:28px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">PKRI</div>
+<p>Patrick Kaku Research & Intelligence</p>
+<p><i>Investigate. Document. Inform. Influence.</i></p>
+</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#investigations">Investigations</a>
+<a href="#news">News</a>
+<a href="#podcast">Podcast</a>
+<a href="#research">Research</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="hero" id="home">
+<h1>Truth. Evidence. Public Interest.</h1>
+<p>Independent research, investigative documentation, intelligence analysis and public-interest reporting.</p>
+<p>We investigate issues, document evidence, inform communities and amplify verified information.</p>
+<a class="btn" href="#investigations">Explore Investigations</a>
+<a class="btn" href="#contact">Submit Information</a>
+</div>
+<section id="investigations">
+<h2>Investigations & Accountability</h2>
+<div class="cards">
+<div class="card"><h3>Public Finance</h3><p>Investigating budgets, contracts, public expenditure and accountability.</p></div>
+<div class="card"><h3>Infrastructure</h3><p>Documenting roads, construction projects, procurement and project delivery.</p></div>
+<div class="card"><h3>Community Reports</h3><p>Local issues, citizens' voices and evidence-based reporting.</p></div>
+<div class="card"><h3>Digital Evidence</h3><p>Organising records, documents, photographs and timelines for research.</p></div>
+</div>
+</section>
+<section id="news">
+<h2>News & Intelligence</h2>
+<div class="box"><p>News analysis, national affairs, international developments, economy, technology and community reporting.</p><p>Our reporting seeks to distinguish confirmed facts, allegations, opinions and unanswered questions.</p></div>
+</section>
+<section id="podcast">
+<h2>PKRI Podcast Studio</h2>
+<div class="box"><p>Investigative conversations, reports, interviews, analysis and narrated research.</p><p>Coming soon: multimedia podcast and video reporting.</p></div>
+</section>
+<section id="research">
+<h2>Research & Documentation</h2>
+<div class="cards">
+<div class="card"><h3>Research Archive</h3><p>Structured records and reference materials.</p></div>
+<div class="card"><h3>Reports</h3><p>Documented findings and research publications.</p></div>
+<div class="card"><h3>Translation Desk</h3><p>English, Hausa and other language editions.</p></div>
+<div class="card"><h3>Awards & Recognition</h3><p>Investigative portfolios, award research and applications.</p></div>
+</div>
+</section>
+<section id="contact">
+<h2>Submit a Tip or Contact PKRI</h2>
+<div class="box">
+<p>Share a topic, public-interest concern or research lead.</p>
+<form onsubmit="event.preventDefault();alert('Please contact PKRI directly to submit your information. This demo form does not transmit data.');">
+<input placeholder="Your name (optional)">
+<input placeholder="Topic or subject">
+<textarea rows="5" placeholder="Describe the issue or research lead"></textarea>
+<button type="submit">Submit</button>
+</form>
+<p><small>Do not submit passwords, confidential personal information or materials that could put you at risk. This demonstration form does not transmit or store submissions.</small></p>
+</div>
+</section>
+<footer>
+<p><b>PKRI — Patrick Kaku Research & Intelligence</b></p>
+<p>Investigate. Document. Inform. Influence.</p>
+<p>Independent research and public-interest documentation.</p>
+</footer>
+</body>
+</html>
