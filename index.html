@@ -4,96 +4,319 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PKRI | Patrick Kaku Research & Intelligence</title>
+<title>PKRI News | Patrick Kaku Research & Intelligence</title>
+<meta name="description" content="PKRI Investigative News. Investigate, verify and report.">
+<meta name="theme-color" content="#081526">
+
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:#081526;color:#fff}
-header{background:#102642;padding:20px;text-align:center;border-bottom:2px solid #d4af37}
-.logo{font-size:28px;font-weight:bold;color:#d4af37}
-header p{margin:8px 0;color:#cbd5e1}
+a{color:inherit;text-decoration:none}
+header{background:#102642;padding:18px;text-align:center;border-bottom:3px solid #d4af37}
+.logo{font-size:30px;font-weight:900;color:#d4af37}
+.tagline{font-size:12px;color:#ddd;margin-top:5px}
 nav{display:flex;flex-wrap:wrap;justify-content:center;background:#142b47}
-nav a{color:white;text-decoration:none;padding:14px;font-size:14px}
-.hero{padding:45px 22px;text-align:center;background:linear-gradient(140deg,#102642,#07111e)}
-.hero h1{font-size:34px;color:#d4af37}
-.hero p{line-height:1.7;color:#dbe4ef}
-.btn{display:inline-block;padding:13px 20px;background:#d4af37;color:#081526;font-weight:bold;text-decoration:none;border-radius:6px;margin:8px}
-section{padding:28px 18px}
-h2{color:#d4af37}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.card{background:#142b47;padding:18px;border-radius:12px;border:1px solid #263e5c}
-.card h3{color:#d4af37}
-.card p{line-height:1.6;color:#dbe4ef}
-.box{background:#142b47;padding:20px;border-radius:12px}
-input,textarea,select{width:100%;padding:13px;margin:8px 0;border-radius:6px;border:1px solid #aaa;font-size:16px}
-button{padding:13px 18px;background:#d4af37;color:#081526;border:0;border-radius:6px;font-weight:bold}
-footer{text-align:center;padding:25px;background:#102642;color:#ccc}
-@media(max-width:500px){.cards{grid-template-columns:1fr}.hero h1{font-size:28px}}
+nav a{padding:12px;font-size:14px;font-weight:bold}
+nav a:hover{background:#d4af37;color:#081526}
+.container{max-width:1100px;margin:auto;padding:15px}
+.breaking{background:#d4af37;color:#081526;padding:12px;font-weight:bold;margin:15px 0}
+.hero{background:linear-gradient(135deg,#102642,#081526);padding:25px;border:1px solid #d4af37;border-radius:12px;margin-bottom:20px}
+.hero h1{font-size:30px;margin:10px 0}
+.hero p{color:#d6dce5;line-height:1.6}
+.btn{display:inline-block;background:#d4af37;color:#081526;padding:12px 16px;border-radius:7px;font-weight:bold;margin-top:10px}
+.section-title{border-left:5px solid #d4af37;padding-left:10px;margin:25px 0 15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:15px}
+.card{background:#102642;border:1px solid #263d5c;border-radius:10px;padding:17px}
+.card h3{margin-top:8px}
+.card p{color:#cbd5e1;line-height:1.5}
+.source{font-size:12px;color:#d4af37}
+.category{font-size:11px;background:#d4af37;color:#081526;padding:5px 8px;border-radius:4px;font-weight:bold}
+button{border:0;cursor:pointer}
+.searchbox{width:100%;padding:13px;border-radius:8px;border:1px solid #d4af37;background:#102642;color:white;margin:10px 0}
+.feedstatus{color:#cbd5e1;font-size:13px;margin:10px 0}
+.article{background:#102642;padding:20px;border-radius:10px;line-height:1.7;margin-bottom:15px}
+footer{background:#102642;padding:25px;text-align:center;margin-top:30px;border-top:2px solid #d4af37;color:#d1d5db}
+.tipbox{background:#152e4d;border:1px solid #d4af37;padding:20px;border-radius:10px}
+textarea{width:100%;padding:12px;background:#081526;color:white;border:1px solid #d4af37;border-radius:8px;min-height:130px}
+@media(max-width:600px){.hero h1{font-size:23px}.logo{font-size:26px}nav a{padding:10px;font-size:12px}}
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="logo">PKRI</div>
-<p>Patrick Kaku Research & Intelligence</p>
-<p><i>Investigate. Document. Inform. Influence.</i></p>
+<div style="font-size:40px">🌍 📰 🔎</div>
+<div class="logo">PKRI NEWS</div>
+<div style="font-weight:bold;margin-top:5px">PATRICK KAKU</div>
+<div style="font-size:13px">RESEARCH & INTELLIGENCE</div>
+<div class="tagline">THE INVESTIGATIVE NEWSPAPER</div>
+<div class="tagline">INVESTIGATE • VERIFY • REPORT</div>
 </header>
+
 <nav>
 <a href="#home">Home</a>
+<a href="#latest">Latest News</a>
 <a href="#investigations">Investigations</a>
-<a href="#news">News</a>
-<a href="#podcast">Podcast</a>
-<a href="#research">Research</a>
-<a href="#contact">Contact</a>
+<a href="#factcheck">Fact Check</a>
+<a href="#tips">Submit a Tip</a>
 </nav>
-<div class="hero" id="home">
-<h1>Truth. Evidence. Public Interest.</h1>
-<p>Independent research, investigative documentation, intelligence analysis and public-interest reporting.</p>
-<p>We investigate issues, document evidence, inform communities and amplify verified information.</p>
-<a class="btn" href="#investigations">Explore Investigations</a>
-<a class="btn" href="#contact">Submit Information</a>
+
+<div class="container" id="home">
+
+<div class="breaking">
+🔴 PKRI NEWSROOM | INVESTIGATE • VERIFY • REPORT
 </div>
-<section id="investigations">
-<h2>Investigations & Accountability</h2>
-<div class="cards">
-<div class="card"><h3>Public Finance</h3><p>Investigating budgets, contracts, public expenditure and accountability.</p></div>
-<div class="card"><h3>Infrastructure</h3><p>Documenting roads, construction projects, procurement and project delivery.</p></div>
-<div class="card"><h3>Community Reports</h3><p>Local issues, citizens' voices and evidence-based reporting.</p></div>
-<div class="card"><h3>Digital Evidence</h3><p>Organising records, documents, photographs and timelines for research.</p></div>
+
+<section class="hero">
+<div class="category">PKRI INVESTIGATIVE DESK</div>
+<h1>Independent News. Evidence. Accountability.</h1>
+<p>
+Welcome to PKRI — Patrick Kaku Research & Intelligence.
+We monitor public-interest developments, investigate allegations,
+examine documents and promote responsible journalism.
+</p>
+<a class="btn" href="#investigations">READ OUR INVESTIGATIONS</a>
+</section>
+
+<h2 class="section-title">📰 Latest External News</h2>
+<p style="color:#cbd5e1">
+News headlines gathered from external publishers. Always open the original source to verify details.
+</p>
+
+<input class="searchbox" id="search" placeholder="🔎 Search news and investigations..." oninput="filterCards()">
+
+<div id="newsFeed" class="grid">
+<div class="card">
+<h3>Loading news feed...</h3>
+<p>PKRI is attempting to retrieve headlines from external news sources.</p>
 </div>
-</section>
-<section id="news">
-<h2>News & Intelligence</h2>
-<div class="box"><p>News analysis, national affairs, international developments, economy, technology and community reporting.</p><p>Our reporting seeks to distinguish confirmed facts, allegations, opinions and unanswered questions.</p></div>
-</section>
-<section id="podcast">
-<h2>PKRI Podcast Studio</h2>
-<div class="box"><p>Investigative conversations, reports, interviews, analysis and narrated research.</p><p>Coming soon: multimedia podcast and video reporting.</p></div>
-</section>
-<section id="research">
-<h2>Research & Documentation</h2>
-<div class="cards">
-<div class="card"><h3>Research Archive</h3><p>Structured records and reference materials.</p></div>
-<div class="card"><h3>Reports</h3><p>Documented findings and research publications.</p></div>
-<div class="card"><h3>Translation Desk</h3><p>English, Hausa and other language editions.</p></div>
-<div class="card"><h3>Awards & Recognition</h3><p>Investigative portfolios, award research and applications.</p></div>
 </div>
-</section>
-<section id="contact">
-<h2>Submit a Tip or Contact PKRI</h2>
-<div class="box">
-<p>Share a topic, public-interest concern or research lead.</p>
-<form onsubmit="event.preventDefault();alert('Please contact PKRI directly to submit your information. This demo form does not transmit data.');">
-<input placeholder="Your name (optional)">
-<input placeholder="Topic or subject">
-<textarea rows="5" placeholder="Describe the issue or research lead"></textarea>
-<button type="submit">Submit</button>
-</form>
-<p><small>Do not submit passwords, confidential personal information or materials that could put you at risk. This demonstration form does not transmit or store submissions.</small></p>
+
+<div class="feedstatus" id="feedStatus"></div>
+
+<h2 class="section-title" id="investigations">🔍 PKRI Original Investigations</h2>
+
+<div class="grid" id="investigationCards">
+
+<div class="card searchable">
+<span class="category">INVESTIGATIVE ANALYSIS</span>
+<h3>The Daura Palace Controversy: Truth Must Not Be Silenced by Status</h3>
+<p>
+An analysis of allegations, evidence, accountability and due process.
+An allegation is not a conviction; a title is not immunity.
+</p>
+<div class="source">PKRI Investigative Desk | November 23, 2026</div>
+<a class="btn" href="https://www.google.com/search?q=Daura+Emir+tourist+allegation+November+2026" target="_blank">VIEW RELATED REPORTING</a>
 </div>
-</section>
+
+<div class="card searchable">
+<span class="category">PUBLIC PROJECT TRACKING</span>
+<h3>Mararaba–Pambeguwa–Saminaka–Jos Road</h3>
+<p>
+PKRI's public accountability monitoring project examining project records,
+funding, contract information and official responses.
+</p>
+<div class="source">PKRI Research Desk</div>
+<a class="btn" href="https://www.google.com/search?q=Mararaba+Pambeguwa+Saminaka+Jos+road+project" target="_blank">VIEW PROJECT RECORDS</a>
+</div>
+
+<div class="card searchable">
+<span class="category">PUBLIC ACCOUNTABILITY</span>
+<h3>Government Spending & Procurement</h3>
+<p>
+Tracking public spending, procurement claims, project performance,
+official records and public responses.
+</p>
+<div class="source">PKRI Research Desk</div>
+<a class="btn" href="https://www.google.com/search?q=Nigeria+government+procurement+public+contracts" target="_blank">RESEARCH PUBLIC RECORDS</a>
+</div>
+
+</div>
+
+<h2 class="section-title" id="factcheck">🧾 PKRI Fact Check & Verification</h2>
+
+<div class="article">
+<h3>Our Verification Principles</h3>
+<ul>
+<li>Separate allegations from established facts.</li>
+<li>Preserve original evidence where possible.</li>
+<li>Verify dates, sources and context.</li>
+<li>Seek responses from affected parties.</li>
+<li>Correct errors when credible new evidence emerges.</li>
+<li>Do not publish private information unnecessarily.</li>
+</ul>
+</div>
+
+<h2 class="section-title" id="tips">📩 Submit a Tip to PKRI</h2>
+
+<div class="tipbox">
+<p>
+Have information about public funds, abandoned projects,
+fraud allegations or matters of public interest?
+Send a tip to PKRI.
+</p>
+
+<textarea id="tipText" placeholder="Write your tip here. Avoid including passwords, private account details or unnecessary personal information."></textarea>
+
+<button class="btn" onclick="sendTip()">SEND TIP VIA WHATSAPP</button>
+
+<p style="font-size:12px;color:#cbd5e1">
+WhatsApp will open so you can choose a recipient.
+Do not assume this form is anonymous or secure.
+</p>
+</div>
+
+<h2 class="section-title">📢 Share PKRI News</h2>
+<div class="article">
+<p>Share the PKRI newspaper with your community.</p>
+<button class="btn" onclick="shareSite()">SHARE PKRI</button>
+</div>
+
+</div>
+
 <footer>
-<p><b>PKRI — Patrick Kaku Research & Intelligence</b></p>
-<p>Investigate. Document. Inform. Influence.</p>
-<p>Independent research and public-interest documentation.</p>
+<div style="color:#d4af37;font-size:22px;font-weight:bold">PKRI NEWS</div>
+<p>Patrick Kaku Research & Intelligence</p>
+<p>Investigate • Verify • Report</p>
+<p style="font-size:12px">
+External news remains the property of its original publishers.
+PKRI provides attribution and links to original sources.
+</p>
+<p>© 2026 PKRI | Independent Research & Investigative News</p>
 </footer>
+
+<script>
+const sources=[
+{
+name:"Premium Times",
+url:"https://www.premiumtimesng.com",
+rss:"https://www.premiumtimesng.com/feed"
+},
+{
+name:"Punch Newspapers",
+url:"https://punchng.com",
+rss:"https://punchng.com/feed/"
+},
+{
+name:"BBC Africa",
+url:"https://www.bbc.com/news/world/africa",
+rss:"https://feeds.bbci.co.uk/news/world/africa/rss.xml"
+},
+{
+name:"Daily Trust",
+url:"https://dailytrust.com",
+rss:"https://dailytrust.com/feed/"
+},
+{
+name:"Reuters",
+url:"https://www.reuters.com/world/africa/",
+rss:"https://feeds.reuters.com/reuters/AfricaNews"
+}
+];
+
+async function loadNews(){
+const feed=document.getElementById("newsFeed");
+const status=document.getElementById("feedStatus");
+let articles=[];
+let successful=0;
+
+for(const source of sources){
+try{
+const api="https://api.rss2json.com/v1/api.json?rss_url="+encodeURIComponent(source.rss);
+const response=await fetch(api);
+if(!response.ok)continue;
+const data=await response.json();
+if(data.status!=="ok")continue;
+
+successful++;
+
+(data.items||[]).slice(0,4).forEach(item=>{
+articles.push({
+title:item.title,
+link:item.link,
+description:item.description||"",
+date:item.pubDate||"",
+source:source.name
+});
+});
+}catch(e){}
+}
+
+feed.innerHTML="";
+
+if(articles.length===0){
+feed.innerHTML=`
+<div class="card">
+<h3>External news feed temporarily unavailable</h3>
+<p>News feed services may be blocked, unavailable or limited. Visit the publishers directly below.</p>
+${sources.map(s=>`<p><a style="color:#d4af37" href="${s.url}" target="_blank">${s.name} ↗</a></p>`).join("")}
+</div>`;
+status.textContent="Automatic feed unavailable. Publisher links remain available.";
+return;
+}
+
+articles.sort((a,b)=>new Date(b.date)-new Date(a.date));
+
+articles.forEach(article=>{
+const div=document.createElement("div");
+div.className="card searchable";
+
+const description=document.createElement("p");
+description.textContent=article.description.replace(/<[^>]*>/g,"").slice(0,220);
+
+const title=document.createElement("h3");
+title.textContent=article.title;
+
+const source=document.createElement("div");
+source.className="source";
+source.textContent="SOURCE: "+article.source;
+
+const link=document.createElement("a");
+link.className="btn";
+link.href=article.link;
+link.target="_blank";
+link.rel="noopener noreferrer";
+link.textContent="READ ORIGINAL REPORT";
+
+div.append(source,title,description,link);
+feed.appendChild(div);
+});
+
+status.textContent="Loaded "+articles.length+" headlines from "+successful+" publisher feeds. Open original reports for full information.";
+filterCards();
+}
+
+function filterCards(){
+const query=document.getElementById("search").value.toLowerCase();
+document.querySelectorAll(".searchable").forEach(card=>{
+card.style.display=card.innerText.toLowerCase().includes(query)?"block":"none";
+});
+}
+
+function sendTip(){
+const tip=document.getElementById("tipText").value.trim();
+if(!tip){
+alert("Please write your tip first.");
+return;
+}
+const text="PKRI PUBLIC TIP:\n"+tip;
+window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank");
+}
+
+function shareSite(){
+if(navigator.share){
+navigator.share({
+title:"PKRI News",
+text:"PKRI - Patrick Kaku Research & Intelligence. Investigate, Verify, Report.",
+url:window.location.href
+});
+}else{
+window.open("https://wa.me/?text="+encodeURIComponent("PKRI News: "+window.location.href),"_blank");
+}
+}
+
+loadNews();
+</script>
+
 </body>
 </html>
